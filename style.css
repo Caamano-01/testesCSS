@@ -2,20 +2,57 @@ header, nav, main, article, footer {
     padding: 10px;
     margin: 10px;
     border: 1px solid #ccc;
+    font-size: 1.2rem;
+}
+
+#logo_senai {
+    float: left;
 }
 
 nav {
     position: sticky;
     top: 0;
-    background-color: rgb(0, 0, 109);
+    background-color: white;
+    font-size: 1.3rem;
 }
 
-a {
-    color: white;
+.menu {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgb(4, 1, 77);
+    z-index: 10;
+    background-color: rgb(14, 36, 181);
 }
 
 .fixo {
     position: fixed;
     bottom: 20px;
     right: 20px;
+}
+
+.btn {
+    background-color: rgb(14, 36, 181);
+    color: white;
+    padding: 12px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+}
+
+.menu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.menu a:hover {background-color: rgb(250, 250, 250)}
+
+nav:hover .menu {
+  display: block;
+}
+
+nav:hover .btn {
+  background-color: rgb(11, 28, 138);
 }
