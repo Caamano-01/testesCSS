@@ -98,11 +98,11 @@ nav {
 .nav-left, .nav-right {
   display: flex;
   align-items: center;
-  position: relative;
+  gap: 10px;
 }
 
-.nav-left {
-  gap: 10px;
+.dropdown {
+  position: relative;
 }
 
 .nav-right {
