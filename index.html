@@ -17,6 +17,16 @@
       <h1>Minha Empresa</h1>
       <p>Solidez e inovação desde 2001</p>
     </div>
+
+    <!-- SELECT -->
+    <div class="tema-selector">
+    <label for="tema">Tema:</label>
+    <select id="tema" onchange="alterarTema()">
+      <option value="claro">Claro</option>
+      <option value="escuro">Escuro</option>
+    </select>
+  </div>
+
   </header>
 
   <!-- Nav -->
@@ -163,6 +173,15 @@ Seu compromisso com a qualidade garante resultados consistentes para alunos, emp
   <footer>
     <p>© 2025 Minha Empresa. Todos os direitos reservados.</p>
   </footer>
+
+  <!-- Script -->
+  <script>
+    function alterarTema() {
+      const select = document.getElementById('tema');
+      const temaSelecionado = select.value;
+      document.body.classList.toggle('tema-escuro', temaSelecionado === 'escuro');
+    }
+  </script>
 
 </body>
 </html>

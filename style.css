@@ -33,6 +33,18 @@ header {
   text-align: center;
   text-shadow: 2px 2px 8px gray;
 }
+
+.tema-selector {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.tema-selector label,
+.tema-selector select {
+  font-size: 1rem;
+  color: black;
+}
 /*************************************/
 
 /************* Navegação ***************/
@@ -187,3 +199,79 @@ footer {
   color: white;
 }
 /***********************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*************** TEMA ESCURO *************/
+body.tema-escuro {
+  background-color: #000;
+  color: #fff;
+}
+
+body.tema-escuro header,
+body.tema-escuro main,
+body.tema-escuro article {
+  background-color: #111;
+  color: #fff;
+  border-color: #333;
+}
+
+body.tema-escuro .btn{
+  background-color: rgb(181, 14, 14);
+  color: white;
+}
+
+body.tema-escuro .btn:hover {
+  background-color: rgb(255, 83, 83);
+}
+
+body.tema-escuro .menu {
+  background-color: rgb(224, 0, 0);
+}
+
+body.tema-escuro .menu a {
+  color: #fff;
+}
+
+body.tema-escuro .menu a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+body.tema-escuro .card {
+  background-color: rgb(135, 134, 134);
+  box-shadow: 0 4px 8px 0 white;
+}
+
+body.tema-escuro .card:hover {
+  box-shadow: 10px 10px 3px 0 white;
+}
+
+body.tema-escuro .card-text {
+  color: #111;
+}
+
+body.tema-escuro .tema-selector label,
+body.tema-escuro .tema-selector select {
+  color: rgb(255, 255, 255);
+  background-color: #222;
+}
+/*****************************************/
