@@ -1,10 +1,9 @@
-/* Fundo geral */
+/************* Corpo ***************/
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background: linear-gradient(135deg, rgb(151, 0, 0), rgb(0, 0, 149));
 }
 
-/* Estrutura base */
 header, nav, main, article, footer {
     padding: 10px;
     margin: 10px;
@@ -12,38 +11,47 @@ header, nav, main, article, footer {
     font-size: 1.2rem;
     background-color: white;
 }
+/***********************************/
 
-/* Rodapé */
-footer {
-   text-shadow: 2px 2px 4px rgb(99, 99, 99);
-   text-align: center;
-}
-
-/* Cabeçalho */
+/*********** Cabeçalho **************/
 header {
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* Logo à esquerda, texto ao lado */
+  justify-content: space-between;
   text-shadow: 2px 2px 4px rgb(99, 99, 99);
-  padding: 20px;
-  text-align: center;
 }
 
-#logo_senai {
-  max-height: 100px;
+.logo {
+  width: 400px;
   height: auto;
 }
 
-container {
-  justify-content: center;
+.text-header {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-shadow: 2px 2px 8px gray;
 }
+/*************************************/
 
-/* Navegação */
+/************* Navegação ***************/
 nav {
     position: sticky;
     top: 0;
-    background-color: white;
+    background-color: rgb(1, 48, 110);
     font-size: 1.3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
 }
 
 /* Menu dropdown */
@@ -53,12 +61,12 @@ nav {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgb(4, 1, 77);
     z-index: 10;
-    background-color: rgb(14, 36, 181);
+    background-color: rgb(224, 0, 0);
 }
 
 .menu a {
   color: white;
-  padding: 12px 16px;
+  padding: 10px 10px;
   text-decoration: none;
   display: block;
 }
@@ -68,16 +76,9 @@ nav {
   color: black;
 }
 
-/* Whatsapp */
-.fixo {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-}
-
 /* Botão de menu */
 .btn {
-    background-color: rgb(14, 36, 181);
+    background-color: rgb(181, 14, 14);
     color: white;
     padding: 12px;
     font-size: 1.2rem;
@@ -85,11 +86,106 @@ nav {
     cursor: pointer;
 }
 
-nav:hover .btn {
-  background-color: rgb(11, 28, 138);
+.btn:hover {
+  background-color: rgb(255, 83, 83);
 }
 
-/* Mostrar o menu ao passar o mouse*/
-nav:hover .menu {
+.dropdown:hover .menu {
   display: block;
 }
+
+/* Posição dos botões */
+.nav-left, .nav-right {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.nav-left {
+  gap: 10px;
+}
+
+.nav-right {
+  margin-left: auto;
+}
+/****************************************************/
+
+/******************* Main ***************************/
+.text-senai {
+  text-align: justify;
+}
+/*** Cards ***/
+.todos-cards {
+  display: flex;
+}
+
+.card {
+  background-color: #e4e4e4;
+  box-shadow: 0 4px 8px 0 black;
+  transition: 0.3s;
+  width: 40%;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.card-text {
+  margin-left: 8px;
+}
+
+.card h4 {
+  color: rgb(181, 14, 14);
+  background-color: rgba(181, 14, 14, 0.272);
+  font-size: 1.1rem;
+  margin: 16px 0 10px;
+  padding: 8px 16px;
+  width: fit-content;
+  border-radius: 50px;
+
+}
+
+.card img {
+  border-radius: 5px;
+  width: 100%;
+}
+
+.card:hover {
+  box-shadow: 10px 10px 3px 0 black;
+}
+
+.btn-card {
+  background-color: rgb(181, 209, 255);
+  border: none;
+  margin: 10px;
+  border-radius: 50px;
+  cursor: pointer;
+  padding: 15px;
+  font-size: 0.9rem;
+
+}
+
+.btn-card:hover {
+  background-color: rgb(120, 169, 248);
+}
+
+.container {
+  padding: 2px 16px;
+  display: flex;
+  justify-content: center;
+}
+
+/*************** Whatsapp **********************/
+.fixo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+/***********************************************/
+
+/***************** Rodapé **********************/
+footer {
+   text-shadow: 2px 2px 4px rgb(169, 169, 169);
+   text-align: center;
+   background-color: rgb(1, 48, 110);
+   color: white;
+}
+/***********************************************/
