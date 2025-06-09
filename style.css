@@ -184,6 +184,30 @@ nav {
   justify-content: center;
 }
 
+/* galeria */
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.img-galeria-item {
+  width: calc(20% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.img-galeria-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.img-galeria-item h5 {
+  margin-top: 5px;
+}
 /*************** Whatsapp **********************/
 .fixo {
   position: fixed;
