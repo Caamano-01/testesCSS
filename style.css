@@ -229,22 +229,6 @@ footer {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*************** TEMA ESCURO *************/
 body.tema-escuro {
   background-color: #000;
@@ -300,3 +284,56 @@ body.tema-escuro .tema-selector select {
   background-color: #222;
 }
 /*****************************************/
+
+
+
+
+
+/*********** Media Queries **************/
+/* tablets */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  header {
+    display: block;
+    align-items: center;
+  }
+
+  .logo {
+    width: 350px;
+    height: auto;
+  }
+  
+  .text-senai { font-size: 1.2rem;}
+
+  .card {
+    width: calc(33.3% - 20px);
+  }
+
+  .img-galeria-item {
+    width: calc(50% - 20px);
+  }
+}
+
+
+/* celular */
+@media screen and (max-width: 600px) {
+  header {
+    display: block;
+    align-items: center;
+  }
+
+  .logo {
+    width: 300px;
+    height: auto;
+  }
+  
+  .text-senai { font-size: 1rem;}
+
+  .card {
+    width: 100%;
+  }
+
+  .img-galeria-item {
+    width: calc(50% - 20px);
+  }
+}
+/****************************************/
